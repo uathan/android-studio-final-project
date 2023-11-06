@@ -6,7 +6,7 @@
     app:startDestination="@id/nav_main">
     <fragment
         android:id="@+id/nav_main"
-        android:name="com.example.androidproject.MainFragment"
+        android:name="com.example.androidproject.Fragments.MainFragment"
         android:label="Home"
         tools:layout="@layout/fragment_main" >
         <action
@@ -15,18 +15,23 @@
     </fragment>
     <fragment
         android:id="@+id/nav_tips"
-        android:name="com.example.androidproject.VPHostFragment"
+        android:name="com.example.androidproject.ViewPager.VPHostFragment"
         android:label="Tips"
         tools:layout="@layout/fragment_v_p_host" />
     <fragment
         android:id="@+id/nav_contact"
-        android:name="com.example.androidproject.ContactFragment"
+        android:name="com.example.androidproject.Fragments.ContactFragment"
         android:label="Contact Info"
         tools:layout="@layout/fragment_contact" >
     </fragment>
     <fragment
         android:id="@+id/dataTypeFragment"
-        android:name="com.example.androidproject.DataTypeFragment"
+        android:name="com.example.androidproject.Fragments.DataTypeFragment"
         android:label="Courses"
         tools:layout="@layout/fragment_data_type" />
+    <fragment
+        android:id="@+id/locationsFragment"
+        android:name="com.example.androidproject.Fragments.LocationsFragment"
+        android:label="Locations"
+        tools:layout="@layout/fragment_locations" />
 </navigation>

@@ -3,11 +3,7 @@ package com.example.androidproject;
 public class DataTypeItems {
     private String name;
     private String description;
-    //pic
-    //name
-    //desc
-    //location
-    //mig
+
 
     public DataTypeItems(String name, String description) {
         this.name = name;

@@ -1,4 +1,4 @@
-package com.example.androidproject;
+package com.example.androidproject.Fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.androidproject.DataTypeItems;
+import com.example.androidproject.R;
+import com.example.androidproject.ListView.CustomListViewAdapter;
 
 import java.util.ArrayList;
 
