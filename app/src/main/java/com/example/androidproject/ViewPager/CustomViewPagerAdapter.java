@@ -1,9 +1,11 @@
-package com.example.androidproject;
+package com.example.androidproject.ViewPager;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import com.example.androidproject.Fragments.FactFragment;
 
 public class CustomViewPagerAdapter  extends FragmentStateAdapter {
 

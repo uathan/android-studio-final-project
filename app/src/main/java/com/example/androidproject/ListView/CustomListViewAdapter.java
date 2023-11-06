@@ -1,4 +1,4 @@
-package com.example.androidproject;
+package com.example.androidproject.ListView;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.example.androidproject.DataTypeItems;
+import com.example.androidproject.R;
 
 import java.util.List;
 
