@@ -1,33 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Fragments.MainFragment">
 
-
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="College Name"
+        android:text="Nathan's College"
         android:textAlignment="center"
         android:textSize="34sp"
-        android:textStyle="bold"
-        tools:text="College Name" />
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/dataType"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Courses" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/counselling"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/studying" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nathan's College is a dynamic hub of learning, fostering academic excellence in a vibrant and supportive community. With a rich history and a commitment to innovation, our college offers a diverse range of programs designed to empower students for success. Explore our modern campuses, engage with accomplished faculty, and embark on a transformative educational journey at Nathan's College." />
+    </LinearLayout>
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Counselling" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:src="@drawable/studying" />
+
+                <Button
+                    android:id="@+id/dataType"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="4"
+                    android:text="Courses" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:src="@drawable/studying" />
+
+                <Button
+                    android:id="@+id/counselling"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="4"
+                    android:text="Counselling" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/randomtest1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:src="@drawable/studying" />
+
+                <Button
+                    android:id="@+id/randomtest2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="4"
+                    android:text="Counselling" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/randomtest3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:src="@drawable/studying" />
+
+                <Button
+                    android:id="@+id/randomtest4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="4"
+                    android:text="Counselling" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/randomtest5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:src="@drawable/studying" />
+
+                <Button
+                    android:id="@+id/randomtest6"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="4"
+                    android:text="Counselling" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
