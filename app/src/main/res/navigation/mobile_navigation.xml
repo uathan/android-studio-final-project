@@ -34,4 +34,8 @@
         android:name="com.example.androidproject.Fragments.LocationsFragment"
         android:label="Locations"
         tools:layout="@layout/fragment_locations" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.androidproject.Fragments.SettingsFragment"
+        android:label="SettingsFragment" />
 </navigation>
