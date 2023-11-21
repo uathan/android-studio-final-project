@@ -7,19 +7,16 @@
     android:orientation="vertical"
     tools:context=".ViewPager.VPHostFragment">
 
-    <TextView
-        android:id="@+id/textView8"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/fact_tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nathan's College"
-        android:textAlignment="center"
-        android:textSize="25sp" />
+        android:visibility="gone" />
 
-    <ImageView
-        android:id="@+id/imageView5"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/studying" />
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/textView11"
@@ -27,29 +24,8 @@
         android:layout_height="wrap_content"
         android:text="Explore diverse employment opportunities at our college, where a range of positions cater to various skills and interests. From student ambassadors and library assistants to research roles and campus ambassadors, there are rewarding positions available for motivated individuals. Join our community, contribute to the college's success, and gain valuable experience in a dynamic educational environment."
         android:textAlignment="textStart"
-        android:textSize="16sp" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/fact_tab_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone" />
-
-            <androidx.viewpager2.widget.ViewPager2
-                android:id="@+id/viewpager"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-    </ScrollView>
+        android:textColor="#000000"
+        android:textSize="17sp" />
 
 
 </LinearLayout>
