@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import com.example.androidproject.R;
 import com.google.android.material.snackbar.Snackbar;
@@ -107,10 +108,7 @@ public class ContactFragment extends Fragment {
         locationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Uri location = Uri.parse("geo:0,0?q=42.24755556552809, -83.01971133570451(College)");
-                Uri location = Uri.parse("geo:42.23510186138526, -82.9913182911651?q=College");
-                Intent i = new Intent(Intent.ACTION_VIEW, location);
-                startActivity(i);
+                Navigation.findNavController(view).navigate(R.id.locationsFragment);
             }
         });
 

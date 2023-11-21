@@ -75,16 +75,6 @@ public class LocationsFragment extends Fragment {
         dataTypeItems.add(new DataTypeItems("Downtown Campus", "540 Oulette"));
         dataTypeItems.add(new DataTypeItems("Ottawa Campus", "500 Ottawa St"));
         dataTypeItems.add(new DataTypeItems("Toronto Campus", "921 Shelby Dr"));
-        dataTypeItems.add(new DataTypeItems("Windsor Campus", "2000 Windsor St"));
-        dataTypeItems.add(new DataTypeItems("Chatham Campus", "183 Chatham Rd"));
-        dataTypeItems.add(new DataTypeItems("Downtown Campus", "540 Oulette"));
-        dataTypeItems.add(new DataTypeItems("Ottawa Campus", "500 Ottawa St"));
-        dataTypeItems.add(new DataTypeItems("Toronto Campus", "921 Shelby Dr"));
-        dataTypeItems.add(new DataTypeItems("Windsor Campus", "2000 Windsor St"));
-        dataTypeItems.add(new DataTypeItems("Chatham Campus", "183 Chatham Rd"));
-        dataTypeItems.add(new DataTypeItems("Downtown Campus", "540 Oulette"));
-        dataTypeItems.add(new DataTypeItems("Ottawa Campus", "500 Ottawa St"));
-        dataTypeItems.add(new DataTypeItems("Toronto Campus", "921 Shelby Dr"));
 
         RecyclerView recyclerView = view.findViewById(R.id.RecycleView);
         CustomRecyclerViewAdapter adapter = new CustomRecyclerViewAdapter(dataTypeItems);
