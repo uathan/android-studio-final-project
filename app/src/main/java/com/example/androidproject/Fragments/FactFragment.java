@@ -1,9 +1,12 @@
 package com.example.androidproject.Fragments;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
@@ -58,6 +61,15 @@ public class FactFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_fact, container, false);
         TextView  fact = view.findViewById(R.id.fact);
+        Button learnMoreButton = view.findViewById(R.id.learnMore);
+        learnMoreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://NathanCollege.com/jobs/apply"));
+                startActivity(i);
+            }
+        });
+
         if(mParam1 != null){ //"comment often as possible"
             fact.setText(mParam1);
         }
