@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Explore diverse employment opportunities at our college, where a range of positions cater to various skills and interests. From student ambassadors and library assistants to research roles and campus ambassadors, there are rewarding positions available for motivated individuals. Join our community, contribute to the college's success, and gain valuable experience in a dynamic educational environment."
-        android:textAlignment="textStart"
+        android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="17sp" />
 
