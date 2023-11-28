@@ -83,7 +83,7 @@ public class ContactFragment extends Fragment {
         webButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://coolcollegewebsite.com/"));
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://nathanscollege.com/"));
                 startActivity(i);
             }
         });

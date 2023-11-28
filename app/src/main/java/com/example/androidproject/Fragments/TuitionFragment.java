@@ -131,27 +131,28 @@ public class TuitionFragment extends Fragment {
         caluclate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    int tuition = Integer.parseInt(tuitionInput.getText().toString());
-                    int registration = Integer.parseInt(registrationInput.getText().toString());
-                    int other = Integer.parseInt(otherInput.getText().toString());
-                    int textbook = Integer.parseInt(textbookInput.getText().toString());
-                    int supplies = Integer.parseInt(suppliesInput.getText().toString());
-                    int housing = Integer.parseInt(housingInput.getText().toString());
-                    int meals = Integer.parseInt(mealsInput.getText().toString());
-                    int transportation = Integer.parseInt(transportationInput.getText().toString());
-                    if (bool == 1) { // if yearly is clicked
-                        int total = tuition + registration + other + textbook + supplies + housing + meals + transportation;
-                        int monthly = total / 12;
-                        resultText.setText("Your monthly payment will be: ");
-                        resultnum.setText("$" + String.valueOf(monthly));
-                        resultlayout.setVisibility(View.VISIBLE);
-                    } else { // if monthly is clicked
-                        int total = tuition + registration + other + textbook + supplies + housing + meals + transportation;
-                        resultText.setText("Your yearly payment will be: ");
-                        resultnum.setText("$" + String.valueOf(total));
-                        resultlayout.setVisibility(View.VISIBLE);
-                    }
+                System.out.println("Calculate clicked");
+                int tuition = Integer.parseInt(tuitionInput.getText().toString());
+                int registration = Integer.parseInt(registrationInput.getText().toString());
+                int other = Integer.parseInt(otherInput.getText().toString());
+                int textbook = Integer.parseInt(textbookInput.getText().toString());
+                int supplies = Integer.parseInt(suppliesInput.getText().toString());
+                int housing = Integer.parseInt(housingInput.getText().toString());
+                int meals = Integer.parseInt(mealsInput.getText().toString());
+                int transportation = Integer.parseInt(transportationInput.getText().toString());
+                if (bool == 1) { // if yearly is clicked
+                    int total = tuition + registration + other + textbook + supplies + housing + meals + transportation;
+                    int monthly = total / 12;
+                    resultText.setText("Your monthly payment will be: ");
+                    resultnum.setText("$" + String.valueOf(monthly));
+                    resultlayout.setVisibility(View.VISIBLE);
+                } else { // if monthly is clicked
+                    int total = tuition + registration + other + textbook + supplies + housing + meals + transportation;
+                    resultText.setText("Your yearly payment will be: ");
+                    resultnum.setText("$" + String.valueOf(total));
+                    resultlayout.setVisibility(View.VISIBLE);
                 }
+            }
         });
 
 

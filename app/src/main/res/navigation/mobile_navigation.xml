@@ -35,7 +35,7 @@
         android:label="Locations"
         tools:layout="@layout/fragment_locations" />
     <fragment
-        android:id="@+id/settingsFragment"
+        android:id="@+id/nav_settings"
         android:name="com.example.androidproject.Fragments.SettingsFragment"
         android:label="Settings" />
     <fragment
@@ -46,11 +46,16 @@
     <fragment
         android:id="@+id/studentinfoFragment"
         android:name="com.example.androidproject.Fragments.StudentinfoFragment"
-        android:label="fragment_studentinfo"
+        android:label="Future Students"
         tools:layout="@layout/fragment_studentinfo" />
     <fragment
         android:id="@+id/nav_tuition"
         android:name="com.example.androidproject.Fragments.TuitionFragment"
         android:label="Tuition Calculator"
         tools:layout="@layout/fragment_tuition" />
+    <fragment
+        android:id="@+id/studenthubFragment"
+        android:name="com.example.androidproject.Fragments.StudenthubFragment"
+        android:label="Student Hub"
+        tools:layout="@layout/fragment_studenthub" />
 </navigation>

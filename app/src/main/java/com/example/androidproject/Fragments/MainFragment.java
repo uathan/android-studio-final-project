@@ -84,6 +84,13 @@ public class MainFragment extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.studentinfoFragment);
             }
         });
+        Button currentStudents = view.findViewById(R.id.currentStudents);
+        currentStudents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.studenthubFragment);
+            }
+        });
 
         return view;
     }
