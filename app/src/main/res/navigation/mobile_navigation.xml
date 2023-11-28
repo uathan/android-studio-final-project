@@ -48,4 +48,9 @@
         android:name="com.example.androidproject.Fragments.StudentinfoFragment"
         android:label="fragment_studentinfo"
         tools:layout="@layout/fragment_studentinfo" />
+    <fragment
+        android:id="@+id/nav_tuition"
+        android:name="com.example.androidproject.Fragments.TuitionFragment"
+        android:label="Tuition Calculator"
+        tools:layout="@layout/fragment_tuition" />
 </navigation>
