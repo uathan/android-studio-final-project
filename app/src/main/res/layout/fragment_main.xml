@@ -15,14 +15,15 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/studying" />
+            android:layout_height="270dp"
+            android:src="@drawable/library" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nathan's College is a dynamic hub of learning, fostering academic excellence in a vibrant and supportive community. With a rich history and a commitment to innovation, our college offers a diverse range of programs designed to empower students for success. Explore our modern campuses, engage with accomplished faculty, and embark on a transformative educational journey at Nathan's College."
+            android:textAlignment="center"
             android:textColor="#000000" />
 
         <TextView
@@ -54,8 +55,8 @@
                     android:id="@+id/coursesPicture"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:src="@drawable/studying" />
+                    android:layout_weight="7"
+                    android:src="@drawable/courses" />
 
                 <Button
                     android:id="@+id/dataType"
@@ -74,8 +75,8 @@
                     android:id="@+id/counsellingPicture"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:src="@drawable/studying" />
+                    android:layout_weight="7"
+                    android:src="@drawable/hands" />
 
                 <Button
                     android:id="@+id/counselling"
@@ -94,8 +95,8 @@
                     android:id="@+id/futureStudentsPicture"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:src="@drawable/studying" />
+                    android:layout_weight="7"
+                    android:src="@drawable/future" />
 
                 <Button
                     android:id="@+id/futureStudents"
@@ -114,8 +115,8 @@
                     android:id="@+id/currentStudentsPicture"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:src="@drawable/studying" />
+                    android:layout_weight="7"
+                    android:src="@drawable/currentstudent" />
 
                 <Button
                     android:id="@+id/currentStudents"
@@ -128,14 +129,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <ImageView
                     android:id="@+id/alumniPicture"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:src="@drawable/studying" />
+                    android:layout_weight="7"
+                    android:src="@drawable/alumni" />
 
                 <Button
                     android:id="@+id/alumni"

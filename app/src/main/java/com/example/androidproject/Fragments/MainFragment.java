@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
@@ -62,6 +63,13 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
+//        ImageView courses = view.findViewById(R.id.coursesPicture);
+//        ImageView counselling = view.findViewById(R.id.counsellingPicture);
+//        ImageView future = view.findViewById(R.id.futureStudentsPicture);
+//        ImageView current = view.findViewById(R.id.currentStudentsPicture);
+//        ImageView alumni = view.findViewById(R.id.alumniPicture);
+
+
         Button dataTypeButton = view.findViewById(R.id.dataType);
         dataTypeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +97,13 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Navigation.findNavController(view).navigate(R.id.studenthubFragment);
+            }
+        });
+        Button alumni = view.findViewById(R.id.alumni);
+        alumni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.alumniFragment);
             }
         });
 

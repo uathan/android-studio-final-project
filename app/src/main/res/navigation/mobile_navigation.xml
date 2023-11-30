@@ -58,4 +58,9 @@
         android:name="com.example.androidproject.Fragments.StudenthubFragment"
         android:label="Student Hub"
         tools:layout="@layout/fragment_studenthub" />
+    <fragment
+        android:id="@+id/alumniFragment"
+        android:name="com.example.androidproject.Fragments.AlumniFragment"
+        android:label="Alumni"
+        tools:layout="@layout/fragment_alumni" />
 </navigation>

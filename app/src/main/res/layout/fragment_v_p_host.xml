@@ -27,5 +27,29 @@
         android:textColor="#000000"
         android:textSize="17sp" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you're interested in getting a job at Nathan's College, and you are not interested in the ones listed, see all jobs on our website."
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/seeAllJobs" />
+
+        <Button
+            android:id="@+id/seeAllJobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See all Jobs"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </LinearLayout>

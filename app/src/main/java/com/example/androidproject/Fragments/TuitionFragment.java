@@ -22,7 +22,7 @@ import com.example.androidproject.R;
  */
 public class TuitionFragment extends Fragment {
 
-    public int bool = 0; // 0 == monthly 1 == yearly
+    public int bool = 3; // 0 == monthly 1 == yearly
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -146,10 +146,14 @@ public class TuitionFragment extends Fragment {
                     resultText.setText("Your monthly payment will be: ");
                     resultnum.setText("$" + String.valueOf(monthly));
                     resultlayout.setVisibility(View.VISIBLE);
-                } else { // if monthly is clicked
+                } else if (bool == 0) { // if monthly is clicked
                     int total = tuition + registration + other + textbook + supplies + housing + meals + transportation;
                     resultText.setText("Your yearly payment will be: ");
                     resultnum.setText("$" + String.valueOf(total));
+                    resultlayout.setVisibility(View.VISIBLE);
+                } else {
+                    resultText.setText("Please select a billing cycle");
+                    resultnum.setText("");
                     resultlayout.setVisibility(View.VISIBLE);
                 }
             }

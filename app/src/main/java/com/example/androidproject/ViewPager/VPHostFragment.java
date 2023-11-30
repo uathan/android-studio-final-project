@@ -11,6 +11,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.androidproject.R;
@@ -71,6 +72,15 @@ public class VPHostFragment extends Fragment {
        View view = inflater.inflate(R.layout.fragment_v_p_host, container, false);
        viewPager2 = view.findViewById(R.id.viewpager);
        viewPager2.setAdapter(new CustomViewPagerAdapter(getActivity()));
+
+        Button webButton = view.findViewById(R.id.seeAllJobs);
+        webButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://nathanscollege.com/jobs"));
+                startActivity(i);
+            }
+        });
        return view;
     }
 
