@@ -34,10 +34,13 @@
 
                 <Button
                     android:id="@+id/contactCollege"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Email College" />
+                    android:text="Email College"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/regular" />
 
             </LinearLayout>
 
@@ -58,10 +61,13 @@
 
                 <Button
                     android:id="@+id/phoneButton"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Call College" />
+                    android:text="Call College"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/regular" />
 
             </LinearLayout>
 
@@ -82,10 +88,13 @@
 
                 <Button
                     android:id="@+id/visitWebsite"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
-                    android:text="Visit Website" />
+                    android:text="Visit Website"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/regular" />
 
             </LinearLayout>
 
@@ -106,10 +115,13 @@
 
                 <Button
                     android:id="@+id/locationButton"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Locations" />
+                    android:text="Locations"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/regular" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

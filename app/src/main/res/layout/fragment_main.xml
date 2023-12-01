@@ -60,10 +60,13 @@
 
                 <Button
                     android:id="@+id/dataType"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="4"
-                    android:text="Courses" />
+                    android:text="Courses"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/regular" />
             </LinearLayout>
 
             <LinearLayout
@@ -80,10 +83,13 @@
 
                 <Button
                     android:id="@+id/counselling"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="4"
-                    android:text="Counselling" />
+                    android:text="Counselling"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/regular" />
             </LinearLayout>
 
             <LinearLayout
@@ -100,10 +106,13 @@
 
                 <Button
                     android:id="@+id/futureStudents"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="4"
-                    android:text="future students" />
+                    android:text="future students"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/regular" />
             </LinearLayout>
 
             <LinearLayout
@@ -120,10 +129,13 @@
 
                 <Button
                     android:id="@+id/currentStudents"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="4"
-                    android:text="Current Students" />
+                    android:text="Current Students"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/regular" />
             </LinearLayout>
 
             <LinearLayout

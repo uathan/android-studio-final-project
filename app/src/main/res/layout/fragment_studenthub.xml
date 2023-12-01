@@ -59,12 +59,13 @@
 
                     <Button
                         android:id="@+id/studentCardButton"
+                        style="@style/Widget.Material3.Button.TextButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:backgroundTint="#272761"
                         android:text="Get your Student Card"
-                        android:textColor="@color/white" />
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/regular" />
                 </TableRow>
 
                 <TableRow
@@ -73,12 +74,13 @@
 
                     <Button
                         android:id="@+id/bookstoreButton"
+                        style="@style/Widget.Material3.Button.TextButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:backgroundTint="#272761"
                         android:text="Order supplies from Bookstore"
-                        android:textColor="@color/white" />
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/regular" />
                 </TableRow>
 
                 <TableRow
@@ -87,12 +89,13 @@
 
                     <Button
                         android:id="@+id/chooseElective"
+                        style="@style/Widget.Material3.Button.TextButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:backgroundTint="#272761"
                         android:text="How to choose an elective"
-                        android:textColor="@color/white" />
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/regular" />
                 </TableRow>
 
                 <TableRow
@@ -101,12 +104,13 @@
 
                     <Button
                         android:id="@+id/hoursOfOperation"
+                        style="@style/Widget.Material3.Button.TextButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:backgroundTint="#272761"
                         android:text="Our Hours of operation"
-                        android:textColor="@color/white" />
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/regular" />
                 </TableRow>
 
                 <TableRow
@@ -115,12 +119,13 @@
 
                     <Button
                         android:id="@+id/campusFloorMaps"
+                        style="@style/Widget.Material3.Button.TextButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:backgroundTint="#272761"
                         android:text="Campus and Floor Maps"
-                        android:textColor="@color/white" />
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/regular" />
                 </TableRow>
 
                 <TableRow
@@ -129,12 +134,13 @@
 
                     <Button
                         android:id="@+id/parkingPass"
+                        style="@style/Widget.Material3.Button.TextButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:backgroundTint="#272761"
                         android:text="Purchase a parking pass"
-                        android:textColor="@color/white" />
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/regular" />
                 </TableRow>
 
                 <TableRow
@@ -143,12 +149,13 @@
 
                     <Button
                         android:id="@+id/contactIT"
+                        style="@style/Widget.Material3.Button.TextButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:backgroundTint="#272761"
                         android:text="contact I.T"
-                        android:textColor="@color/white" />
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/regular" />
                 </TableRow>
 
                 <TableRow
@@ -157,12 +164,13 @@
 
                     <Button
                         android:id="@+id/requestToWidthdraw"
+                        style="@style/Widget.Material3.Button.TextButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:backgroundTint="#272761"
                         android:text="Request to widthdraw from program"
-                        android:textColor="@color/white" />
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/regular" />
                 </TableRow>
 
                 <TableRow
@@ -171,12 +179,13 @@
 
                     <Button
                         android:id="@+id/policies"
+                        style="@style/Widget.Material3.Button.TextButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:backgroundTint="#272761"
                         android:text="Our academic policies"
-                        android:textColor="@color/white" />
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/regular" />
                 </TableRow>
 
             </TableLayout>
@@ -196,11 +205,13 @@
 
                 <Button
                     android:id="@+id/emailCollegeAgain"
+                    style="@style/Widget.Material3.Button.TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
                     android:text="Email"
-                    android:textAllCaps="true" />
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/regular" />
             </LinearLayout>
 
         </LinearLayout>
