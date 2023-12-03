@@ -15,27 +15,25 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21099290780141844" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.21099290780141844" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_alumni.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_contact.xml" value="0.17543859649122806" />
-        <entry key="app/src/main/res/layout/fragment_counselling.xml" value="0.35643115942028986" />
+        <entry key="app/src/main/res/layout/fragment_counselling.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_data_type.xml" value="0.21099290780141844" />
         <entry key="app/src/main/res/layout/fragment_fact.xml" value="0.21099290780141844" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.21099290780141844" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.21099290780141844" />
-        <entry key="app/src/main/res/layout/fragment_locations.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_locations.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.21099290780141844" />
-        <entry key="app/src/main/res/layout/fragment_studenthub.xml" value="0.375" />
-        <entry key="app/src/main/res/layout/fragment_studentinfo.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_tuition.xml" value="0.35643115942028986" />
-        <entry key="app/src/main/res/layout/fragment_v_p_host.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_studentinfo.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_tuition.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_v_p_host.xml" value="0.21099290780141844" />
         <entry key="app/src/main/res/layout/item_view.xml" value="0.21099290780141844" />
         <entry key="app/src/main/res/layout/location_view.xml" value="0.19074074074074074" />
         <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.21099290780141844" />
         <entry key="app/src/main/res/layout/switch_item.xml" value="0.21099290780141844" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.34829931972789113" />
-        <entry key="app/src/main/res/menu/main.xml" value="0.1" />
-        <entry key="app/src/main/res/xml/root_preferences.xml" value="0.375" />
+        <entry key="app/src/main/res/menu/main.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/xml/root_preferences.xml" value="0.21099290780141844" />
       </map>
     </option>
   </component>
@@ -44,12 +42,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.35643115942028986" />
-      </ProjectState>
-    </option>
   </component>
 </project>

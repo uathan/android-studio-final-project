@@ -19,12 +19,13 @@
             android:src="@drawable/library" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/mainDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nathan's College is a dynamic hub of learning, fostering academic excellence in a vibrant and supportive community. With a rich history and a commitment to innovation, our college offers a diverse range of programs designed to empower students for success. Explore our modern campuses, engage with accomplished faculty, and embark on a transformative educational journey at Nathan's College."
             android:textAlignment="center"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/textView4"

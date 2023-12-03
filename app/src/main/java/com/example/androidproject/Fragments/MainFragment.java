@@ -1,14 +1,17 @@
 package com.example.androidproject.Fragments;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.preference.PreferenceManager;
 
 import com.example.androidproject.R;
 
@@ -63,6 +66,14 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        boolean largeText = preferences.getBoolean("largeText", false);
+        TextView mainDescription = view.findViewById(R.id.mainDesc);
+
+        if (largeText) {
+            mainDescription.setTextSize(20);
+        }
+
 //        ImageView courses = view.findViewById(R.id.coursesPicture);
 //        ImageView counselling = view.findViewById(R.id.counsellingPicture);
 //        ImageView future = view.findViewById(R.id.futureStudentsPicture);
