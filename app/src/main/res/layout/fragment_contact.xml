@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/archivo"
-                    android:text="Unlock seamless communication with Nathan's College email service. Stay connected, receive important updates, and collaborate effortlessly with faculty and peers. Your personalized digital space for academic excellence and timely information."
+                    android:text="@string/unlock_seamless_communication_with_nathan_s_college_email_service_stay_connected_receive_important_updates_and_collaborate_effortlessly_with_faculty_and_peers_your_personalized_digital_space_for_academic_excellence_and_timely_information"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="@dimen/regular" />
