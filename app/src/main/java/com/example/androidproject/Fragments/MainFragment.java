@@ -1,13 +1,18 @@
 package com.example.androidproject.Fragments;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.preference.PreferenceManager;
 
 import com.example.androidproject.R;
 
@@ -62,7 +67,33 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
-        Button dataTypeButton = view.findViewById(R.id.dataType);
+
+
+
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        boolean largeText = preferences.getBoolean("largeText", false);
+        TextView mainDescription = view.findViewById(R.id.mainDesc);
+        TextView coursesText = view.findViewById(R.id.coursesText);
+        TextView counsellingText = view.findViewById(R.id.counsellingText);
+        TextView currentStudentsText = view.findViewById(R.id.currentStudentsText);
+        TextView futureStudentsText = view.findViewById(R.id.futureStudentsText);
+
+        if (largeText) {
+            coursesText.setTextSize(20);
+            mainDescription.setTextSize(20);
+            counsellingText.setTextSize(20);
+            currentStudentsText.setTextSize(20);
+            futureStudentsText.setTextSize(20);
+        }
+
+//        ImageView courses = view.findViewById(R.id.coursesPicture);
+//        ImageView counselling = view.findViewById(R.id.counsellingPicture);
+//        ImageView future = view.findViewById(R.id.futureStudentsPicture);
+//        ImageView current = view.findViewById(R.id.currentStudentsPicture);
+//        ImageView alumni = view.findViewById(R.id.alumniPicture);
+
+
+        ImageButton dataTypeButton = view.findViewById(R.id.dataType);
         dataTypeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,12 +101,32 @@ public class MainFragment extends Fragment {
                         .navigate(R.id.coursesFragment);
             }
         });
-        Button counselling = view.findViewById(R.id.counselling);
+        ImageButton counselling = view.findViewById(R.id.counselling);
         counselling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view)
-                        .navigate(R.id.locationsFragment);
+                Navigation.findNavController(view).navigate(R.id.counsellingFragment);
+            }
+        });
+        ImageButton studentInfo = view.findViewById(R.id.futureStudents);
+        studentInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.studentinfoFragment);
+            }
+        });
+        ImageButton currentStudents = view.findViewById(R.id.currentStudents);
+        currentStudents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.studenthubFragment);
+            }
+        });
+        Button alumni = view.findViewById(R.id.alumni);
+        alumni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.alumniFragment);
             }
         });
 

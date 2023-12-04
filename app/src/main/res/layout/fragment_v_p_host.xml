@@ -1,18 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ViewPager.VPHostFragment">
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/fact_tab_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
     <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/viewpager"/>
+        android:background="@color/blue_700">
+
+        <TextView
+            android:id="@+id/mainJobsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/archivo"
+            android:text="Explore diverse employment opportunities at our college, where a range of positions cater to various skills and interests. From student ambassadors and library assistants to research roles and campus ambassadors, there are rewarding positions available for motivated individuals. Join our community, contribute to the college's success, and gain valuable experience in a dynamic educational environment!"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/regular"
+            app:layout_constraintBottom_toTopOf="@+id/JobsReminder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/JobsReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_700"
+            android:text="If you're interested in getting a job at Nathan's College, and you are not interested in the ones listed, see all jobs on our website."
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/seeAllJobs" />
+
+        <Button
+            android:id="@+id/seeAllJobs"
+            style="@style/box_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See all Jobs"
+            android:textAllCaps="true"
+            android:textSize="@dimen/regular"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </LinearLayout>

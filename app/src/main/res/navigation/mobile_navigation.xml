@@ -16,12 +16,12 @@
     <fragment
         android:id="@+id/nav_tips"
         android:name="com.example.androidproject.ViewPager.VPHostFragment"
-        android:label="Tips"
+        android:label="Jobs"
         tools:layout="@layout/fragment_v_p_host" />
     <fragment
         android:id="@+id/nav_contact"
         android:name="com.example.androidproject.Fragments.ContactFragment"
-        android:label="Contact Info"
+        android:label="Contact and Information"
         tools:layout="@layout/fragment_contact" >
     </fragment>
     <fragment
@@ -34,4 +34,38 @@
         android:name="com.example.androidproject.Fragments.LocationsFragment"
         android:label="Locations"
         tools:layout="@layout/fragment_locations" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.androidproject.Fragments.SettingsFragment"
+        android:label="Settings" />
+    <fragment
+        android:id="@+id/counsellingFragment"
+        android:name="com.example.androidproject.Fragments.CounsellingFragment"
+        android:label="Counselling"
+        tools:layout="@layout/fragment_counselling" />
+    <fragment
+        android:id="@+id/studentinfoFragment"
+        android:name="com.example.androidproject.Fragments.StudentinfoFragment"
+        android:label="Future Students"
+        tools:layout="@layout/fragment_studentinfo" />
+    <fragment
+        android:id="@+id/nav_tuition"
+        android:name="com.example.androidproject.Fragments.TuitionFragment"
+        android:label="Tuition Calculator"
+        tools:layout="@layout/fragment_tuition" />
+    <fragment
+        android:id="@+id/studenthubFragment"
+        android:name="com.example.androidproject.Fragments.StudenthubFragment"
+        android:label="Student Hub"
+        tools:layout="@layout/fragment_studenthub" />
+    <fragment
+        android:id="@+id/alumniFragment"
+        android:name="com.example.androidproject.Fragments.AlumniFragment"
+        android:label="Alumni"
+        tools:layout="@layout/fragment_alumni" />
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="com.example.androidproject.Fragments.CreditsFragment"
+        android:label="Credits"
+        tools:layout="@layout/fragment_credits" />
 </navigation>

@@ -3,35 +3,137 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue_700"
     android:orientation="vertical"
     tools:context=".Fragments.ContactFragment">
 
 
-    <Button
-        android:id="@+id/contactCollege"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Contact College" />
+        android:layout_height="match_parent"
+        android:layout_weight="0">
 
-    <Button
-        android:id="@+id/visitWebsite"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Visit Website" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_700"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/phoneButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Call College" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="vertical">
 
-    <Button
-        android:id="@+id/locationButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Location" />
+                <TextView
+                    android:id="@+id/emailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/archivo"
+                    android:text="Unlock seamless communication with Nathan's College email service. Stay connected, receive important updates, and collaborate effortlessly with faculty and peers. Your personalized digital space for academic excellence and timely information."
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/regular" />
+
+                <Button
+                    android:id="@+id/contactCollege"
+                    style="@style/box_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email College"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/phoneText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/archivo"
+                    android:text="Connect with Nathan's College effortlessly through our dedicated phone line. Experience prompt assistance, get answers to your queries, and stay informed about campus updates. Your direct line to a supportive and responsive college community."
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/regular" />
+
+                <Button
+                    android:id="@+id/phoneButton"
+                    style="@style/box_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Call College"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/webText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/archivo"
+                    android:text="Explore Nathan's College website – your digital doorway to academic excellence. Discover programs, connect with the community, and stay updated on the latest happenings. Your educational journey starts with a click."
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/regular" />
+
+                <Button
+                    android:id="@+id/visitWebsite"
+                    style="@style/box_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Visit Website"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/locationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/archivo"
+                    android:text="Discover the diverse campuses of Nathan's College, strategically located to provide an enriching environment for learning. From urban hubs to serene landscapes, each location offers a unique blend of academic vibrancy and community spirit. Find your educational home at Nathan's College across our well-placed campuses."
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/regular" />
+
+                <Button
+                    android:id="@+id/locationButton"
+                    style="@style/box_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Locations"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

@@ -1,14 +1,18 @@
 package com.example.androidproject.Fragments;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
+import androidx.preference.PreferenceManager;
 
 import com.example.androidproject.R;
 import com.google.android.material.snackbar.Snackbar;
@@ -64,6 +68,23 @@ public class ContactFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view =inflater.inflate(R.layout.fragment_contact, container, false);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        boolean largeText = preferences.getBoolean("largeText", false);
+        TextView emailText = view.findViewById(R.id.emailText);
+        TextView phoneText = view.findViewById(R.id.phoneText);
+        TextView webText = view.findViewById(R.id.webText);
+        TextView locationText = view.findViewById(R.id.locationText);
+
+
+        if (largeText) {
+            emailText.setTextSize(20);
+            phoneText.setTextSize(20);
+            webText.setTextSize(20);
+            locationText.setTextSize(20);
+        }
+
+
+
         String[] emails = {"nathanjamrog@customCollege.ca"};
         String name = "Nathan Jamrog";
         String phone = "226 340 2839";
@@ -82,7 +103,7 @@ public class ContactFragment extends Fragment {
         webButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://coolcollegewebsite.com/"));
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://nathanscollege.com/"));
                 startActivity(i);
             }
         });
@@ -107,10 +128,7 @@ public class ContactFragment extends Fragment {
         locationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Uri location = Uri.parse("geo:0,0?q=42.24755556552809, -83.01971133570451(College)");
-                Uri location = Uri.parse("geo:42.23510186138526, -82.9913182911651?q=College");
-                Intent i = new Intent(Intent.ACTION_VIEW, location);
-                startActivity(i);
+                Navigation.findNavController(view).navigate(R.id.locationsFragment);
             }
         });
 

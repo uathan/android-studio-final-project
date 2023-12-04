@@ -3,12 +3,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue_700"
+    android:orientation="vertical"
     tools:context=".Fragments.LocationsFragment">
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo"
+        android:text="Where stunning campus scenery meets inspiring learning spaces. Explore beauty in every corner, from serene gardens to modern architecture. Your educational journey, surrounded by wonder."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/regular" />
+
+    <TextView
+        android:id="@+id/descriptionText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore our various locations!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/regular"
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/RecycleView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
     </androidx.recyclerview.widget.RecyclerView>
+
 </LinearLayout>

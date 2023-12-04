@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_500"
+    android:orientation="vertical"
+    tools:context=".Fragments.CounsellingFragment">
+
+    <TextView
+        android:id="@+id/counsellingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_700"
+        android:fontFamily="@font/archivo"
+        android:text="Counselling Services"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo"
+        android:text="At Nathan's College, we understand that the journey through higher education can be both exciting and challenging. That's why we're here to provide comprehensive counseling services to support our students every step of the way.  "
+        android:textColor="@color/white"
+        android:textSize="@dimen/regular" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo"
+        android:text="Our team of experienced and dedicated counselors is committed to promoting the well-being and academic success of all our students. Whether you're facing personal challenges, seeking career guidance, or simply need someone to talk to, our counseling services are designed to meet your individual needs.  "
+        android:textColor="@color/white"
+        android:textSize="@dimen/regular" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_700"
+        android:fontFamily="@font/archivo"
+        android:text="Our counseling offerings include:  "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_700"
+                android:fontFamily="@font/archivo"
+                android:text="Personal Counselling:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo"
+                android:text="Our licensed counselors provide a confidential and supportive space for students to discuss personal concerns, manage stress, and navigate life's challenges."
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_700"
+                android:fontFamily="@font/archivo"
+                android:text="Academic Support:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo"
+                android:text="If you're facing academic challenges, our counselors can help you develop effective study strategies, time management skills, and provide resources to enhance your academic performance."
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_700"
+                android:fontFamily="@font/archivo"
+                android:text="Career Counseling:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo"
+                android:text="Explore your passions and career goals with our career counseling services. From choosing a major to preparing for your future career, our counselors are here to guide you on your professional journey."
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_700"
+                android:fontFamily="@font/archivo"
+                android:text="Group Workshops and Seminars:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo"
+                android:text="Join our informative workshops and seminars on topics such as stress management, time management, and effective communication. These sessions provide valuable skills to help you succeed both academically and personally."
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_700"
+                android:fontFamily="@font/archivo"
+                android:text="Crisis Intervention:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo"
+                android:text="In times of crisis, our counseling team is available to provide immediate support and assistance, ensuring the safety and well-being of our students."
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
