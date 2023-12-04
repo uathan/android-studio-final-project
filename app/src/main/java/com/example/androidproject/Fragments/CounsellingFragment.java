@@ -1,12 +1,15 @@
 package com.example.androidproject.Fragments;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.androidproject.R;
 
@@ -62,6 +65,40 @@ public class CounsellingFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_counselling, container, false);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        boolean largeText = preferences.getBoolean("largeText", false);
+
+
+        TextView title2 = view.findViewById(R.id.textView10);
+        TextView title3 = view.findViewById(R.id.textView15);
+        TextView title4 = view.findViewById(R.id.textView16);
+        TextView title5 = view.findViewById(R.id.textView18);
+        TextView title6 = view.findViewById(R.id.textView17);
+        TextView title7 = view.findViewById(R.id.textView20);
+        TextView title8 = view.findViewById(R.id.textView19);
+        TextView title9 = view.findViewById(R.id.textView21);
+        TextView title10 = view.findViewById(R.id.textView22);
+        TextView title11 = view.findViewById(R.id.textView23);
+        TextView title12 = view.findViewById(R.id.textView24);
+        TextView title13 = view.findViewById(R.id.textView25);
+        TextView title14 = view.findViewById(R.id.textView26);
+
+        if (largeText) {
+            title2.setTextSize(20);
+            title3.setTextSize(20);
+            title4.setTextSize(25);
+            title5.setTextSize(20);
+            title6.setTextSize(20);
+            title7.setTextSize(20);
+            title8.setTextSize(20);
+            title9.setTextSize(20);
+            title10.setTextSize(20);
+            title11.setTextSize(20);
+            title12.setTextSize(20);
+            title13.setTextSize(20);
+            title14.setTextSize(20);
+        }
+
 
 
 

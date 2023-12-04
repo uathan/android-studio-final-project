@@ -20,4 +20,9 @@
     <style name="Theme.AndroidProject.AppBarOverlay"
         parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.AndroidProject.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="box_button">
+        <item name="android:background">@color/blue_500</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
 </resources>

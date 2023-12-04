@@ -1,17 +1,20 @@
 package com.example.androidproject.ViewPager;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.preference.PreferenceManager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.androidproject.R;
@@ -70,8 +73,20 @@ public class VPHostFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
        View view = inflater.inflate(R.layout.fragment_v_p_host, container, false);
+
+       SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+       boolean largeText = preferences.getBoolean("largeText", false);
+
+       TextView textView = view.findViewById(R.id.mainJobsDescription);
+       TextView textView2 = view.findViewById(R.id.JobsReminder);
+
        viewPager2 = view.findViewById(R.id.viewpager);
        viewPager2.setAdapter(new CustomViewPagerAdapter(getActivity()));
+
+       if (largeText) {
+           textView.setTextSize(20);
+           textView2.setTextSize(15);
+       }
 
         Button webButton = view.findViewById(R.id.seeAllJobs);
         webButton.setOnClickListener(new View.OnClickListener() {

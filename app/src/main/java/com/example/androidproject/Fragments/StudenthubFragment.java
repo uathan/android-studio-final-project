@@ -1,15 +1,18 @@
 package com.example.androidproject.Fragments;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.androidproject.R;
 
@@ -65,6 +68,9 @@ public class StudenthubFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_studenthub, container, false);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        boolean largeText = preferences.getBoolean("largeText", false);
+
         String[] emails = {"nathanjamrog@customCollege.ca"};
         String name = "Nathan Jamrog";
         String phone = "226 340 2839";
@@ -79,6 +85,10 @@ public class StudenthubFragment extends Fragment {
                 startActivity(i);
             }
         });
+
+        TextView title = view.findViewById(R.id.studentHubTitle);
+        TextView title2 = view.findViewById(R.id.studentHubDescription);
+        TextView title3 = view.findViewById(R.id.textView45);
 
         Button card = view.findViewById(R.id.studentCardButton);
         Button books = view.findViewById(R.id.bookstoreButton);
@@ -154,6 +164,12 @@ public class StudenthubFragment extends Fragment {
             }
         });
 
+
+        if (largeText) {
+            title.setTextSize(30);
+            title2.setTextSize(20);
+            title3.setTextSize(20);
+        }
 
 
         return view;

@@ -1,5 +1,6 @@
 package com.example.androidproject.Fragments;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
 import com.example.androidproject.DataTypeItems;
 import com.example.androidproject.R;
@@ -67,7 +69,11 @@ public class DataTypeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_data_type, container, false);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        boolean largeText = preferences.getBoolean("largeText", false);
+
         TextView dataTypeDescription = view.findViewById(R.id.dataTypeDescription);
+        TextView dataTypeName = view.findViewById(R.id.dataTypeName);
         ListView listView = view.findViewById(R.id.dataTypeList);
         ArrayList<DataTypeItems> dataTypeItems = new ArrayList<>();
         dataTypeItems.add(new DataTypeItems("Accounting", "Accounting, also known as accountancy, is the processing of information about economic entities, such as businesses and corporations"));
@@ -96,10 +102,18 @@ public class DataTypeFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-               dataTypeDescription
-                       .setText(((DataTypeItems)listView.getItemAtPosition(i)).getDescription());
+                dataTypeName.setText(((DataTypeItems)listView.getItemAtPosition(i)).getName());
+               dataTypeDescription.setText(((DataTypeItems)listView.getItemAtPosition(i)).getDescription());
             }
         });
+
+
+        if (largeText) {
+            dataTypeName.setTextSize(38);
+            dataTypeDescription.setTextSize(30);
+
+        }
+
         return view;
     }
 }

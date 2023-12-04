@@ -1,14 +1,17 @@
 package com.example.androidproject.Fragments;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.preference.PreferenceManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.androidproject.R;
 
@@ -64,6 +67,8 @@ public class StudentinfoFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_studentinfo, container, false);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        boolean largeText = preferences.getBoolean("largeText", false);
         Button contact = view.findViewById(R.id.contactCollegeButton);
         contact.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +76,43 @@ public class StudentinfoFragment extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.nav_contact);
             }
         });
+
+        TextView text2 = view.findViewById(R.id.textView27);
+        TextView text3 = view.findViewById(R.id.textView29);
+        TextView text4 = view.findViewById(R.id.textView31);
+        TextView text5 = view.findViewById(R.id.textView32);
+        TextView text6 = view.findViewById(R.id.textView33);
+        TextView text7 = view.findViewById(R.id.textView34);
+        TextView text8 = view.findViewById(R.id.textView35);
+        TextView text9 = view.findViewById(R.id.textView36);
+        TextView text10 = view.findViewById(R.id.textView37);
+        TextView text11 = view.findViewById(R.id.textView38);
+        TextView text12 = view.findViewById(R.id.textView39);
+        TextView text13 = view.findViewById(R.id.textView40);
+        TextView text14 = view.findViewById(R.id.textView41);
+        TextView text15 = view.findViewById(R.id.textView42);
+        TextView text16 = view.findViewById(R.id.textView43);
+
+        if (largeText) {
+            text2.setTextSize(20);
+            text3.setTextSize(20);
+            text4.setTextSize(20);
+            text5.setTextSize(20);
+            text6.setTextSize(20);
+            text7.setTextSize(20);
+            text8.setTextSize(20);
+            text9.setTextSize(20);
+            text10.setTextSize(20);
+            text11.setTextSize(20);
+            text12.setTextSize(20);
+            text13.setTextSize(20);
+            text14.setTextSize(20);
+            text15.setTextSize(20);
+            text16.setTextSize(20);
+        }
+
+
+
 
         return view;
     }

@@ -1,5 +1,7 @@
 package com.example.androidproject.Fragments;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.androidproject.DataTypeItems;
 import com.example.androidproject.R;
@@ -70,11 +73,15 @@ public class LocationsFragment extends Fragment {
 
         ArrayList<DataTypeItems> dataTypeItems = new ArrayList<>();
 
-        dataTypeItems.add(new DataTypeItems("Windsor Campus", "2000 Windsor St"));
+        dataTypeItems.add(new DataTypeItems("Windsor Campus", "400 Dougall St"));
+        dataTypeItems.add(new DataTypeItems("Downtown Windsor Campus", "540 Oulette"));
         dataTypeItems.add(new DataTypeItems("Chatham Campus", "183 Chatham Rd"));
-        dataTypeItems.add(new DataTypeItems("Downtown Campus", "540 Oulette"));
         dataTypeItems.add(new DataTypeItems("Ottawa Campus", "500 Ottawa St"));
-        dataTypeItems.add(new DataTypeItems("Toronto Campus", "921 Shelby Dr"));
+        dataTypeItems.add(new DataTypeItems("Toronto Campus", "901 Shelby Dr"));
+        dataTypeItems.add(new DataTypeItems("Hamilton Campus", "940 Upper James St"));
+        dataTypeItems.add(new DataTypeItems("Guelph Campus", "782 Oliver St"));
+        dataTypeItems.add(new DataTypeItems("Cambridge Campus", "34 Pinebush Rd"));
+        dataTypeItems.add(new DataTypeItems("London Campus", "26 York Rd"));
 
         RecyclerView recyclerView = view.findViewById(R.id.RecycleView);
         CustomRecyclerViewAdapter adapter = new CustomRecyclerViewAdapter(dataTypeItems);
@@ -82,6 +89,8 @@ public class LocationsFragment extends Fragment {
         recyclerView.setAdapter(adapter);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+
 
 
         return view;

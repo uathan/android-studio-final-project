@@ -12,6 +12,7 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
+import androidx.preference.SwitchPreference;
 
 import com.example.androidproject.R;
 
@@ -21,16 +22,9 @@ public class SettingsFragment extends PreferenceFragmentCompat {
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.root_preferences, rootKey);
 
+
+        SwitchPreference switchPreference = findPreference("toggleAnimations");
         CheckBoxPreference largerTextPreference = findPreference("largeText");
 
-        if (largerTextPreference != null) {
-            largerTextPreference.setOnPreferenceChangeListener((preference, newValue) -> {
-                boolean disableAnimations = (boolean) newValue;
-                SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(requireContext());
-                preferences.edit().putBoolean("disableAnimations", disableAnimations).apply();
-                return true;
-            });
-
-        }
     }
 }

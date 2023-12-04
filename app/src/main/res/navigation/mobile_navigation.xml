@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/nav_main"
         android:name="com.example.androidproject.Fragments.MainFragment"
-        android:label="Nathan's College"
+        android:label="Home"
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/coursesFragment"
@@ -63,4 +63,9 @@
         android:name="com.example.androidproject.Fragments.AlumniFragment"
         android:label="Alumni"
         tools:layout="@layout/fragment_alumni" />
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="com.example.androidproject.Fragments.CreditsFragment"
+        android:label="Credits"
+        tools:layout="@layout/fragment_credits" />
 </navigation>

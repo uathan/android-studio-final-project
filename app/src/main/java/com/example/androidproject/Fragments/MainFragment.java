@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -66,12 +67,23 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
+
+
+
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         boolean largeText = preferences.getBoolean("largeText", false);
         TextView mainDescription = view.findViewById(R.id.mainDesc);
+        TextView coursesText = view.findViewById(R.id.coursesText);
+        TextView counsellingText = view.findViewById(R.id.counsellingText);
+        TextView currentStudentsText = view.findViewById(R.id.currentStudentsText);
+        TextView futureStudentsText = view.findViewById(R.id.futureStudentsText);
 
         if (largeText) {
+            coursesText.setTextSize(20);
             mainDescription.setTextSize(20);
+            counsellingText.setTextSize(20);
+            currentStudentsText.setTextSize(20);
+            futureStudentsText.setTextSize(20);
         }
 
 //        ImageView courses = view.findViewById(R.id.coursesPicture);
@@ -81,7 +93,7 @@ public class MainFragment extends Fragment {
 //        ImageView alumni = view.findViewById(R.id.alumniPicture);
 
 
-        Button dataTypeButton = view.findViewById(R.id.dataType);
+        ImageButton dataTypeButton = view.findViewById(R.id.dataType);
         dataTypeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -89,21 +101,21 @@ public class MainFragment extends Fragment {
                         .navigate(R.id.coursesFragment);
             }
         });
-        Button counselling = view.findViewById(R.id.counselling);
+        ImageButton counselling = view.findViewById(R.id.counselling);
         counselling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Navigation.findNavController(view).navigate(R.id.counsellingFragment);
             }
         });
-        Button studentInfo = view.findViewById(R.id.futureStudents);
+        ImageButton studentInfo = view.findViewById(R.id.futureStudents);
         studentInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Navigation.findNavController(view).navigate(R.id.studentinfoFragment);
             }
         });
-        Button currentStudents = view.findViewById(R.id.currentStudents);
+        ImageButton currentStudents = view.findViewById(R.id.currentStudents);
         currentStudents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

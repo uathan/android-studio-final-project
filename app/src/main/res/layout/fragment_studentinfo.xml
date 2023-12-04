@@ -2,39 +2,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue_500"
+    android:orientation="vertical"
     tools:context=".Fragments.StudentinfoFragment">
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/blue_700"
+        android:fontFamily="@font/archivo"
         android:text="Learn About Our Semester"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="34sp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView27"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to Nathan's College, where your educational journey begins anew on September 15th each year! Our fall semester kickstarts a vibrant academic experience filled with opportunities for growth, discovery, and success.  " />
+        android:fontFamily="@font/archivo"
+        android:text="Welcome to Nathan's College, where your educational journey begins anew on September 15th each year! Our fall semester kickstarts a vibrant academic experience filled with opportunities for growth, discovery, and success.  "
+        android:textColor="@color/white"
+        android:textSize="@dimen/regular" />
 
     <TextView
         android:id="@+id/textView29"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/blue_700"
+        android:fontFamily="@font/archivo"
         android:text="Why choose Nathan's college?"
-        android:textColor="#000000"
-        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/regular"
         android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="344dp">
+        android:layout_height="400dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,109 +53,163 @@
                 android:id="@+id/textView31"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/blue_700"
+                android:fontFamily="@font/archivo"
                 android:text="Academic Excellence:"
-                android:textColor="#000000" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView32"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="At Nathan's College, we pride ourselves on delivering a top-notch education. Our faculty comprises experts in their fields, dedicated to providing a dynamic and engaging learning environment." />
+                android:fontFamily="@font/archivo"
+                android:text="At Nathan's College, we pride ourselves on delivering a top-notch education. Our faculty comprises experts in their fields, dedicated to providing a dynamic and engaging learning environment."
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular" />
 
             <TextView
                 android:id="@+id/textView33"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/blue_700"
+                android:fontFamily="@font/archivo"
                 android:text="Diverse Campus Community:"
-                android:textColor="#000000" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView34"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Embrace diversity and connect with a vibrant community of students from various backgrounds. Nathan's College fosters an inclusive atmosphere where everyone is valued and respected." />
+                android:fontFamily="@font/archivo"
+                android:text="Embrace diversity and connect with a vibrant community of students from various backgrounds. Nathan's College fosters an inclusive atmosphere where everyone is valued and respected."
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular" />
 
             <TextView
                 android:id="@+id/textView35"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/blue_700"
+                android:fontFamily="@font/archivo"
                 android:text="Cutting-edge Facilities:"
-                android:textColor="#000000" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView36"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="From state-of-the-art classrooms to well-equipped laboratories, Nathan's College provides the resources you need to excel in your studies. Our commitment to technological advancements ensures you stay at the forefront of your field." />
+                android:fontFamily="@font/archivo"
+                android:text="From state-of-the-art classrooms to well-equipped laboratories, Nathan's College provides the resources you need to excel in your studies. Our commitment to technological advancements ensures you stay at the forefront of your field."
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular" />
 
             <TextView
                 android:id="@+id/textView37"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/blue_700"
+                android:fontFamily="@font/archivo"
                 android:text="Personalized Support:"
-                android:textColor="#000000" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView38"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Whether through counseling services, academic advising, or career guidance, Nathan's College is dedicated to supporting your personal and academic growth. Our goal is to empower you to overcome challenges and achieve your goals." />
+                android:fontFamily="@font/archivo"
+                android:text="Whether through counseling services, academic advising, or career guidance, Nathan's College is dedicated to supporting your personal and academic growth. Our goal is to empower you to overcome challenges and achieve your goals."
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular" />
 
             <TextView
                 android:id="@+id/textView39"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/blue_700"
+                android:fontFamily="@font/archivo"
                 android:text="Career Preparation:"
-                android:textColor="#000000" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView40"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nathan's College is committed to preparing students for success in the professional world. Our career services provide guidance, internships, and networking opportunities to help you transition seamlessly from college to your dream career." />
+                android:fontFamily="@font/archivo"
+                android:text="Nathan's College is committed to preparing students for success in the professional world. Our career services provide guidance, internships, and networking opportunities to help you transition seamlessly from college to your dream career."
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular" />
 
             <TextView
                 android:id="@+id/textView41"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/blue_700"
+                android:fontFamily="@font/archivo"
                 android:text="Beautiful Campus:"
-                android:textColor="#000000" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView42"
+                style="@style/box_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Enjoy learning in a picturesque setting with green spaces and modern architecture. Nathan's College provides an inspiring backdrop for your academic journey." />
+                android:fontFamily="@font/archivo"
+                android:text="Enjoy learning in a picturesque setting with green spaces and modern architecture. Nathan's College provides an inspiring backdrop for your academic journey."
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular" />
 
         </LinearLayout>
     </ScrollView>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/blue_700"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView43"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:layout_weight="1"
-            android:paddingTop="20sp"
+            android:background="@color/blue_700"
+            android:fontFamily="@font/archivo"
             android:text="If these attributes are important to you, then Nathan's college is the way to go!"
             android:textAlignment="center"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/contactCollegeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/contactCollegeButton"
-            style="@style/Widget.Material3.Button.TextButton"
+            style="@style/box_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:text="CONTACT US"
-            android:textSize="@dimen/regular" />
-
-    </LinearLayout>
+            android:textSize="@dimen/regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView43"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

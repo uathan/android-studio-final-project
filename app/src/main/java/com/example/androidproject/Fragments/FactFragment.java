@@ -1,6 +1,7 @@
 package com.example.androidproject.Fragments;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
 import com.example.androidproject.R;
 
@@ -67,6 +69,9 @@ public class FactFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_fact, container, false);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        boolean largeText = preferences.getBoolean("largeText", false);
+
         TextView  fact = view.findViewById(R.id.fact);
         ImageView image = view.findViewById(R.id.factImage);
         Button learnMoreButton = view.findViewById(R.id.learnMore);
@@ -84,6 +89,12 @@ public class FactFragment extends Fragment {
         if(mParam2 != 0) {
             image.setImageResource(mParam2);
         }
+
+        if (largeText) {
+            fact.setTextSize(20);
+        }
+
+
         return view;
     }
 }

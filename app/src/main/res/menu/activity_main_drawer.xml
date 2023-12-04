@@ -7,7 +7,8 @@
         <item
             android:id="@+id/nav_main"
             android:icon="@drawable/ic_baseline_domain_24"
-            android:title="Home" />
+            android:title="Home"
+            />
         <item
             android:id="@+id/nav_tips"
             android:icon="@drawable/ic_baseline_school_24"
@@ -17,8 +18,12 @@
             android:icon="@drawable/ic_baseline_person_24"
             android:title="Contact" />
         <item
+            android:id="@+id/nav_credits"
+            android:icon="@drawable/ic_baseline_assignment_ind_24"
+            android:title="Credits" />
+        <item
             android:id="@+id/nav_tuition"
             android:icon="@drawable/ic_baseline_calculate_24"
-            android:title="Tuition Helper" />
+            android:title="Tuition Calculator" />
     </group>
 </menu>

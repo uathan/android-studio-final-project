@@ -6,4 +6,8 @@
         android:defaultValue="false"
         android:key="largeText"
         android:title="Larger Text" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="animationsToggle"
+        android:title="Toggle Animations" />
 </PreferenceScreen>
