@@ -142,6 +142,10 @@ public class TuitionFragment extends Fragment {
             transportationInput.setTextSize(20);
             miscText.setTextSize(20);
             miscInput.setTextSize(20);
+            caluclate.setTextSize(20);
+            reset.setTextSize(20);
+            resultText.setTextSize(20);
+            resultnum.setTextSize(20);
 
         }
 

@@ -1,12 +1,15 @@
 package com.example.androidproject.Fragments;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.androidproject.R;
 
@@ -61,6 +64,17 @@ public class CreditsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_credits, container, false);
+        View view = inflater.inflate(R.layout.fragment_credits, container, false);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        boolean largeText = preferences.getBoolean("largeText", false);
+
+        TextView textView1 = view.findViewById(R.id.creditsText);
+
+        if (largeText) {
+            textView1.setTextSize(20);
+        }
+
+
+        return view;
     }
 }
