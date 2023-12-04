@@ -18,5 +18,5 @@ This app is a brochure for a fictional college, the app's main purpose is to inf
 
 The Tuition Calculator is a tool that helps students at Nathan's College calculate a monthly or yearly rate to pay their Tuition
 
-![App Screenshot]()
+![App Screenshot](https://imgur.com/a/mUyjlfY)
 
