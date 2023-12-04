@@ -18,12 +18,12 @@
             android:icon="@drawable/ic_baseline_person_24"
             android:title="Contact" />
         <item
-            android:id="@+id/nav_credits"
-            android:icon="@drawable/ic_baseline_assignment_ind_24"
-            android:title="Credits" />
-        <item
             android:id="@+id/nav_tuition"
             android:icon="@drawable/ic_baseline_calculate_24"
             android:title="Tuition Calculator" />
+        <item
+            android:id="@+id/nav_credits"
+            android:icon="@drawable/ic_baseline_assignment_ind_24"
+            android:title="Credits" />
     </group>
 </menu>
