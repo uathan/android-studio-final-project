@@ -169,6 +169,16 @@ public class StudenthubFragment extends Fragment {
             title.setTextSize(30);
             title2.setTextSize(20);
             title3.setTextSize(20);
+            card.setTextSize(20);
+            books.setTextSize(20);
+            elective.setTextSize(20);
+            operationHours.setTextSize(20);
+            campusMap.setTextSize(20);
+            parkingPass.setTextSize(20);
+            contactIT.setTextSize(20);
+            widthdrawRequest.setTextSize(20);
+            policies.setTextSize(20);
+            emailButton.setTextSize(20);
         }
 
 
